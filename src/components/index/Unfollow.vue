@@ -1,6 +1,6 @@
 <template>
   <el-popover placement="top" width="160" v-model="visible">
-    <p>Do you sure to unfollow this person？</p>
+    <p>Are you sure to unfollow this person？</p>
     <div style="text-align: right; margin: 0">
       <el-button size="mini" type="text" @click="visible = false">cancel</el-button>
       <el-button type="primary" size="mini" @click="handleUnfollow">sure</el-button>
