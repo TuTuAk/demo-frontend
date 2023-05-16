@@ -1,7 +1,7 @@
 <template>
   <el-header>
     <div class="title" >
-      <span style="width: 100%; align-items: center">Moi Kittos</span>
+      <span style="width: 100%; align-items: center;">Moi Kittos</span>
     </div>
     <el-button style="width: 100px" @click="logout" type="primary" size="small">Logout</el-button>
   </el-header>
@@ -23,8 +23,17 @@ export default {
   .title {
     font-size: 25px;
     color: #333;
+    display: flex;
+    justify-content: center;
+      width: 100%;
   }
-
+  .title span {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      font-weight: bold;
+      font-size: 36px;
+  }
   .el-header {
     width: 100%;
     height: 48px;

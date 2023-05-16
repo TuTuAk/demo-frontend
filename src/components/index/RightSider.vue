@@ -11,9 +11,9 @@
         </el-table-column>
         <el-table-column prop="name" label="username"></el-table-column>
         <el-table-column prop="email" label="email"></el-table-column>
-        <el-table-column label="action">
+        <el-table-column label="action" v-if="user.id !== currentUser.id" >
           <template >
-            <el-button v-if="user.id !== currentUser.id" @click="handleFollow(user.id)" type="primary" size="small">Follow</el-button>
+            <el-button @click="handleFollow(user.id)" type="primary" size="small">Follow</el-button>
           </template>
         </el-table-column>
       </el-table>
