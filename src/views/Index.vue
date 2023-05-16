@@ -4,7 +4,7 @@
     <el-container class="bottom-container">
       <LeftSider @handlePageChange="changePage" :currentPageId.sync="currentPageId" :currentUser="currentUser"/>
       <Container :currentUser="currentUser" v-if="currentPageId === 'Index'" @refreshCurrentUser="getCurrentUser"/>
-      <RightSider :currentPageId.sync="currentPageId" @handlePageChange="changePage" @refreshCurrentUser="getCurrentUser" v-else/>
+      <RightSider :currentUser="currentUser" :currentPageId.sync="currentPageId" @handlePageChange="changePage" @refreshCurrentUser="getCurrentUser" v-else/>
     </el-container>
   </div>
 </template>
