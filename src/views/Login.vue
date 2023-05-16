@@ -1,6 +1,11 @@
 <template>
   <div class="login_container">
     <div class="login_box">
+      <el-header>
+        <div class="title" >
+          <span style="width: 100%; align-content: center">Moi Kittos</span>
+        </div>
+      </el-header>
       <div>
         <el-form ref="loginFormRef" :model="loginForm" :rules="loginFormRules" label-width="0px" class="login_form">
           <el-form-item prop="name">
@@ -77,6 +82,21 @@ export default {
     height: 100%;
   }
 
+  .title {
+    font-size: 25px;
+    color: #333;
+    margin-left: 150px;
+  }
+
+  .el-header {
+    width: 100%;
+    height: 48px;
+    box-shadow: 0 0 1px 0px rgba(0,0,0,0.15);
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .login_box {
     width: 550px;
     height: 360px;

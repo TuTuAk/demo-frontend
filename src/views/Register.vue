@@ -1,6 +1,11 @@
 <template>
   <div class="register_container">
     <div class="register_box">
+      <el-header>
+        <div class="title" >
+          <span style="width: 100%; align-content: center">Moi Kittos</span>
+        </div>
+      </el-header>
       <div>
         <el-form ref="registerFormRef" :model="registerForm" :rules="registerFormRules" label-width="0px" class="register_form">
           <el-form-item prop="name">
@@ -119,7 +124,21 @@ export default {
   .register_container {
     height: 100%;
   }
+  .title {
+    font-size: 25px;
+    color: #333;
+    margin-left: 150px;
+  }
 
+  .el-header {
+    width: 100%;
+    height: 48px;
+    box-shadow: 0 0 1px 0px rgba(0,0,0,0.15);
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .register_box {
     width: 550px;
     height: 400px;
