@@ -87,7 +87,6 @@ export default {
       this.$emit('handlePageChange', 'SearchResults')
       const { data: user } = await this.$http.get('/api/user/' + this.content)
       this.user = user
-      console.log('test')
     },
     async handleUnfollow (followedId) {
       await this.$http.delete('/api/unfollow', {
